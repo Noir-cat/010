@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>支付</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<script src="js/jquery.min.js"></script>
+<link href="css/font-awesome.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href='http://fonts.useso.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+<link href='http://fonts.useso.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300,300italic,100italic,100' rel='stylesheet' type='text/css'>
+<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+    $('#horizontalTab').easyResponsiveTabs({
+        type: 'default',
+        width: 'auto',
+        fit: true
+    });
+});
+</script>
+<script src="js/jquery.easydropdown.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="page-header">
+    <div class="container">
+        <div class="page-header-info">
+            <div class="page-header-info-head text-center">
+                <a href="index.html"><h1>旅行推荐计划</h1></a>
+            </div>
+            <div class="h_menu4">
+                <a class="toggleMenu" href="">菜单</a>
+                <ul class="nav p-nav">
+                    <li class="active"><a href="index.html">首页</a></li>
+                    <li><a href="booking.html">酒店</a>
+                        <ul>
+                            <li><a href="booking.html">预订</a></li>
+                            <li><a href="rooms.html">房间</a></li>
+                            <li><a href="reservation.html">预订信息</a></li>
+                            <li><a href="booking.html">大城市酒店</a></li>
+                            <li><a href="booking.html">小城市酒店</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="payment.html">航班</a>
+                        <ul>
+                            <li><a href="payment.html">支付</a></li>
+                            <li><a href="search.html">搜索</a></li>
+                            <li><a href="search.html">列表</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="destination.html" class="root">目的地</a>
+                        <ul>
+                            <li><a href="destination.html">菲律宾</a></li>
+                            <li><a href="destination.html">巴西</a></li>
+                            <li><a href="destination.html">纽约</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content-section">
+    <div class="container">
+        <div class="paymemt-row-wrap">
+            <div class="col-md-8">
+                <h3>乘客信息</h3>
+                <ul class="list booking-item-passengers">
+                    <li>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label>性别</label>
+                                <div class="radio-inline radio-small">
+                                    <label>
+                                        <input class="i-radio" type="radio" name="passenger-1-sex" />男</label>
+                                </div>
+                                <div class="radio-inline radio-small">
+                                    <label>
+                                        <input class="i-radio" type="radio" name="passenger-1-sex" />女</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>姓名</label>
+                                    <input class="form-control" type="text" />
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>姓氏</label>
+                                    <input class="form-control" type="text" />
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>出生日期</label>
+                                    <input class="date-pick-years form-control" type="text" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 col-md-offset-3">
+                                <div class="form-group">
+                                    <label>国籍</label>
+                                    <input class="form-control" type="text" />
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>证件系列</label>
+                                    <input class="form-control" type="text" />
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>到期日期</label>
+                                    <input class="date-pick-years form-control" type="text" />
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label>性别</label>
+                                <div class="radio-inline radio-small">
+                                    <label>
+                                        <input class="i-radio" type="radio" name="passenger-2-sex" />男</label>
+                                </div>
+                                <div class="radio-inline radio-small">
+                                    <label>
+                                        <input class="i-radio" type="radio" name="passenger-2-sex" />女</label>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>姓名</label>
+                                    <input class="form-control" type="text" />
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>姓氏</label>
+                                    <input class="form-control" type="text" />
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>出生日期</label>
+                                    <input class="date-pick-years form-control" type="text" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 col-md-offset-3">
+                                <div class="form-group">
+                                    <label>国籍</label>
+                                    <input class="form-control" type="text" />
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>证件系列</label>
+                                    <input class="form-control" type="text" />
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="form-group">
+                                    <label>到期日期</label>
+                                    <input class="date-pick-years form-control" type="text" />
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="gap gap-small"></div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="pp-img" src="images/paypal.png" alt="Image Alternative text" title="Image Title" />
+                        <p>重要提示：您将被重定向到 PayPal 网站以安全完成支付。</p><a class="btn btn-primary">通过 PayPal 结算</a>	
+                    </div>
+                    <div class="col-md-6">
+                        <form class="cc-form">
+                            <div class="clearfix">
+                                <div class="form-group form-group-cc-number">
+                                    <label>卡号</label>
+                                    <input class="form-control" placeholder="xxxx xxxx xxxx xxxx" type="text" /><span class="cc-card-icon"></span>
+                                </div>
+                                <div class="form-group form-group-cc-cvc">
+                                    <label>CVC</label>
+                                    <input class="form-control" placeholder="xxxx" type="text" />
+                                </div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="form-group form-group-cc-name">
+                                    <label>持卡人姓名</label>
+                                    <input class="form-control" type="text" />
+                                </div>
+                                <div class="form-group form-group-cc-date">
+                                    <label>有效期</label>
+                                    <input class="form-control" placeholder="mm/yy" type="text" />
+                                </div>
+                            </div>
+                            <div class="checkbox checkbox-small">
+                                <label>
+                                    <input class="i-check" type="checkbox" checked/>添加到我的卡片</label>
+                            </div>
+                            <input class="btn btn-primary" type="submit" value="继续支付" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="booking-item-payment">
+                    <header class="clearfix">
+                        <h5 class="mb0">伦敦 - 纽约</h5>
+                    </header>
+                    <ul class="booking-item-payment-details">
+                        <li>
+                            <h5>航班详情</h5>
+                            <div class="booking-item-payment-flight">
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <div class="booking-item-flight-details">
+                                            <div class="booking-item-departure"><i class="fa fa-plane"></i>
+                                                <h5>22:25</h5>
+                                                <p class="booking-item-date">3月22日，星期日</p>
+                                                <p class="booking-item-destination">英国伦敦希思罗机场 (LHR)</p>
+                                            </div>
+                                            <div class="booking-item-arrival"><i class="fa fa-plane fa-flip-vertical"></i>
+                                                <h5>12:25</h5>
+                                                <p class="booking-item-date">3月23日，星期六</p>
+                                                <p class="booking-item-destination">美国北卡罗来纳州夏洛特机场 (CLT)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="booking-item-flight-duration">
+                                            <p>时长</p>
+                                            <h5>10小时</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>在美国夏洛特停留 2 小时 55 分钟</p>
+                                <div class="row">
+                                    <div class="col-md-9">
+                                        <div class="booking-item-flight-details">
+                                            <div class="booking-item-departure"><i class="fa fa-plane"></i>
+                                                <h5>22:25</h5>
+                                                <p class="booking-item-date">3月22日，星期日</p>
+                                                <p class="booking-item-destination">英国伦敦希思罗机场 (LHR)</p>
+                                            </div>
+                                            <div class="booking-item-arrival"><i class="fa fa-plane fa-flip-vertical"></i>
+                                                <h5>12:25</h5>
+                                                <p class="booking-item-date">3月23日，星期六</p>
+                                                <p class="booking-item-destination">美国北卡罗来纳州夏洛特机场 (CLT)</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <div class="booking-item-flight-duration">
+                                            <p>时长</p>
+                                            <h5>10小时</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <h5>航班（2 名乘客）</h5>
+                            <ul class="booking-item-payment-price">
+                                <li>
+                                    <p class="booking-item-payment-price-title">2 名乘客</p>
+                                    <p class="booking-item-payment-price-amount">$178<small>/每位乘客</small>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="booking-item-payment-price-title">税费</p>
+                                    <p class="booking-item-payment-price-amount">$18<small>/每位乘客</small>
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p class="booking-item-payment-total">总行程：<span>$392</span>
+                    </p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="gap"></div>
+    </div>
+</div>
+</body>
+</html>

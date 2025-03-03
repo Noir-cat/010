@@ -1,0 +1,368 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>旅行计划————您的出行助手</title>
+
+<link href="{{ url_for('static', filename='css/bootstrap.css') }}" rel="stylesheet">
+<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+<script src="{{ url_for('static', filename='js/easyResponsiveTabs.js') }}"></script>
+<script src="{{ url_for('static', filename='js/jquery.easydropdown.js') }}"></script>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- Custom Theme files -->
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--webfont-->
+<link href='http://fonts.useso.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+<link href='http://fonts.useso.com/css?family=Roboto:400,900italic,900,700italic,700,500italic,500,400italic,300,300italic,100italic,100' rel='stylesheet' type='text/css'>
+<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+		    <script type="text/javascript">
+			    $(document).ready(function () {
+			        $('#horizontalTab').easyResponsiveTabs({
+			            type: 'default', //Types: default, vertical, accordion           
+			            width: 'auto', //auto or any width like 600px
+			            fit: true   // 100% fit in a container
+			        });
+			    });
+</script>
+<script src="js/jquery.easydropdown.js"></script>
+</head>
+<body>
+	<!-- header-starts -->
+	<div class="header">
+		<div class="container">
+			<div class="header-info">
+				<div class="header-info-head text-center">
+					<a href="index.html"><h1>旅行推荐计划</h1></a>
+					<h2>与我们一起规划您的完美之旅</h2>
+				</div>
+				<div class="top-search">
+					<input type="text" class="text" value="国家/城市" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '国家/城市';}">
+				</div>
+				<div class="dropdown-button">           			
+            			<select class="dropdown" tabindex="9" data-settings='{"wrapperClass":"flat"}'>
+            			<option value="0">寻找你的旅游景点</option>	
+						<option value="1">四川</option>
+						<option value="2">上海</option>
+						<option value="3">广西</option>
+						<option value="4">重庆</option>
+						<option value="5">北京</option>
+						<option value="6">湖南</option>
+						<option value="7">哈尔滨</option>
+						<option value="8">青海</option>
+					  </select>
+					</div>
+                 <div class="clearfix"></div>
+				<!-- start h_menu4 -->
+					<div class="h_menu4">
+					<a class="toggleMenu" href="">Menu</a>
+					<ul class="nav">
+						<li class="active"><a href="index.html">主页</a></li>
+						<li><a href="booking.html">住宿</a>
+							<ul>
+								<li><a href="booking.html">大型酒店</a></li>
+								<li><a href="rooms.html">普通旅店</a></li>
+								<li><a href="reservation.html">民宿</a></li>
+								<li><a href="booking.html">青旅</a></li>
+								<li><a href="booking.html">租房</a></li>
+							</ul>
+						</li>
+						<li><a href="payment.html">线路规划</a>
+							<ul>
+								<li><a href="payment.html">飞机</a></li>
+								<li><a href="search.html">高铁/火车</a></li>
+								<li><a href="search.html">轮船</a></li>
+							</ul>
+						</li>
+						<li><a href="destination.html" class="root">目的地</a>
+							<ul>
+								<li><a href="destination.html">地区特色</a></li>
+								<li><a href="destination.html">美丽景色</a></li>
+								<li><a href="destination.html">饮食推荐</a></li>
+							</ul>
+						</li>
+							<li><a href="contact.html">联系我们</a></li>
+						</ul>
+						<script type="text/javascript" src="js/nav.js"></script>
+				</div>
+				<!-- end h_menu4 -->
+               <i class="flow"></i>
+			</div>
+		</div>
+	</div>
+	<!-- header-ends -->
+	<!-- content-section-starts -->
+	<div class="content-section">
+		<div class="services-section">
+			<div class="services-section-left">
+				<h3>热门景点：漠河</h3>
+				<h5>仅需6000元</h5>
+				<h3>来极地，探索奇妙夜空</h3>
+			</div>
+			<div class="services-section-right">
+				<div class="services-section-image">
+					
+					<img src="{{ url_for('static', filename='images/serviceimg.jpg') }}" alt=""/>
+				</div>
+				<div class="services-section-right-text">
+					<p><img src="images/quotes.png" alt="" />在宁静的时光里，我们沉浸于文字的芬芳，如同轻抚岁月的纹理。每一笔勾勒，都是对美好的追寻；每一段篇章，都是对生命的礼赞。愿智慧如涓涓细流，滋养心田；愿希望如晨曦初露，照亮前路。.</p>
+					<p class="end-q">在宁静的时光里，我们沉浸于文字的芬芳，如同轻抚岁月的纹理。每一笔勾勒，都是对美好的追寻；每一段篇章，都是对生命的礼赞。愿智慧如涓涓细流，滋养心田；愿希望如晨曦初露，照亮前路.<img src="images/quot.png" alt="" /></p>
+                <a href="#">约翰·史密斯</a>
+                <span>旅行者</span>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+    <div class="call-us text-center">
+        <h3><i class="phone"></i>联系我们：+10086</h3>
+    </div>
+    <div class="planning-section">
+        <div class="container">
+            <div class="col-md-8 planning-section-left">
+                <h3>旅行规划提示</h3>
+                <h4>& 为每个人提供的建议</h4>
+                <div class="sap_tabs">
+                    <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+                        <ul class="resp-tabs-list">
+                            <li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>餐厅</span></li>
+                            <li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>酒店</span></li>
+                            <li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>目的地</span></li>
+                            <div class="clearfix"></div>
+                        </ul>
+                        <div class="resp-tabs-container">
+                            <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
+                                <ul class="tab_img">
+                                    <li>
+                                        <div class="view view-first">
+                                            <img src="images/pic1.jpg" class="img-responsive" alt=""/>
+                                            <div class="mask">
+                                                <div class="info1"> </div>
+                                            </div>
+                                            <div class="tab_desc">
+                                                <h5>重庆</h5>
+                                                <span>从 888元 起</span>
+                                                <a href="#">立即预订</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="view view-first">
+                                            <img src="images/pic6.jpg" class="img-responsive" alt=""/>
+                                            <div class="mask">
+                                                <div class="info1"> </div>
+                                            </div>
+                                            <div class="tab_desc">
+                                                <h5>重庆</h5>
+                                                <span>从 888元 起</span>
+                                                <a href="#">立即预订</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="last">
+                                        <div class="view view-first">
+                                            <img src="images/pic3.jpg" class="img-responsive" alt=""/>
+                                            <div class="mask">
+                                                <div class="info1"> </div>
+                                            </div>
+                                            <div class="tab_desc">
+                                                <h5>重庆</h5>
+                                                <span>从 888元 起</span>
+                                                <a href="#">立即预订</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <div class="clearfix"></div>
+                                </ul>
+                            </div>
+                            <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
+                                <ul class="tab_img">
+                                    <li>
+                                        <div class="view view-first">
+                                            <img src="images/pic8.jpg" class="img-responsive" alt=""/>
+                                            <div class="mask">
+                                                <div class="info1"> </div>
+                                            </div>
+                                            <div class="tab_desc">
+                                                <h5>重庆</h5>
+                                                <span>从 888元 起</span>
+                                                <a href="#">立即预订</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="view view-first">
+                                            <img src="images/pic7.jpg" class="img-responsive" alt=""/>
+                                            <div class="mask">
+                                                <div class="info1"> </div>
+                                            </div>
+                                            <div class="tab_desc">
+                                                <h5>重庆</h5>
+                                                <span>从 888元 起</span>
+                                                <a href="#">立即预订</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="last">
+                                        <div class="view view-first">
+                                            <img src="images/pic9.jpg" class="img-responsive" alt=""/>
+                                            <div class="mask">
+                                                <div class="info1"> </div>
+                                            </div>
+                                            <div class="tab_desc">
+                                                <h5>重庆</h5>
+                                                <span>从 888元 起</span>
+                                                <a href="#">立即预订</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <div class="clearfix"></div>
+                                </ul>
+                            </div>
+                            <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
+                                <ul class="tab_img">
+                                    <li>
+                                        <div class="view view-first">
+                                            <img src="images/pic10.jpg" class="img-responsive" alt=""/>
+                                            <div class="mask">
+                                                <div class="info1"> </div>
+                                            </div>
+                                            <div class="tab_desc">
+                                                <h5>重庆</h5>
+                                                <span>从 888元 起</span>
+                                                <a href="#">立即预订</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="view view-first">
+                                            <img src="images/pic2.jpg" class="img-responsive" alt=""/>
+                                            <div class="mask">
+                                                <div class="info1"> </div>
+                                            </div>
+                                            <div class="tab_desc">
+                                                <h5>重庆</h5>
+                                                <span>从 888元 起</span>
+                                                <a href="#">立即预订</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="last">
+                                        <div class="view view-first">
+                                            <img src="images/pic12.jpg" class="img-responsive" alt=""/>
+                                            <div class="mask">
+                                                <div class="info1"> </div>
+                                            </div>
+                                            <div class="tab_desc">
+                                                <h5>重庆</h5>
+                                                <span>从 888元 起</span>
+                                                <a href="#">立即预订</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <div class="clearfix"></div>
+                                </ul>
+                            </div>
+                            <div class="tab-1 resp-tab-content" aria-labelledby="tab_item-3">
+                                <ul class="tab_img">
+                                    <li>
+                                        <div class="view view-first">
+                                            <img src="images/pic10.jpg" class="img-responsive" alt=""/>
+                                            <div class="mask">
+                                                <div class="info1"> </div>
+                                            </div>
+                                            <div class="tab_desc">
+                                                <h5>重庆</h5>
+                                                <span>从 888元 起</span>
+                                                <a href="#">立即预订</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="view view-first">
+                                            <img src="images/pic2.jpg" class="img-responsive" alt=""/>
+                                            <div class="mask">
+                                                <div class="info1"> </div>
+                                            </div>
+                                            <div class="tab_desc">
+                                                <h5>重庆</h5>
+                                                <span>从 888元 起</span>
+                                                <a href="#">立即预订</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="view view-first">
+                                            <img src="images/pic9.jpg" class="img-responsive" alt=""/>
+                                            <div class="mask">
+                                                <div class="info1"> </div>
+                                            </div>
+                                            <div class="tab_desc">
+                                                <h5>重庆</h5>
+                                                <span>从 888元 起</span>
+                                                <a href="#">立即预订</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <div class="clearfix"></div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 planning-section-right">
+                <div class="planning-section-right-grid">
+                    <div class="yup-text">
+                        <h3>餐厅</h3>
+                    </div>
+                    <div class="image">
+                        <img src="images/yup.jpg" alt="" />
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="planning-section-right-grid2">
+                    <div class="couple-text">
+                        <h3>蜜月</h3>
+                    </div>
+                    <div class="couple-image">
+                        <img src="images/couple.png" alt="" />
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <h4>新闻通讯：</h4>
+                <div class="news-search-box">
+                    <form>
+                        <input type="text" class="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '';}">
+                        <input type="submit" value>
+                    </form>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="mail text-center">
+        <h3><i class="msg"></i>邮箱：mail@fandouhuayuan601.org</h3>
+    </div>
+    <div class="main-map">
+        
+    </div>
+    <div class="mail text-center">
+        <h3><i class="location"></i>地址：翻斗花园601号</h3>
+    </div>
+    <!-- 联系表单部分 -->
+<div class="contact-section">
+    <div class="container">
+        <form action="/contact" method="POST">
+            <input type="text" name="name" class="text" value="姓名" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '姓名';}">
+            <input type="text" name="phone" class="text" value="电话" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '电话';}">
+            <input type="text" name="email" class="text" value="邮箱" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '邮箱';}">
+            <textarea name="message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '消息';}">消息</textarea>
+            <input type="submit" value="发送">
+        </form>
+    </div>
+</div>
